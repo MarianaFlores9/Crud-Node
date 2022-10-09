@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+        <p>Agenda De Tareas</p>
+    
+    <div class="agregar">
+        <h3>Agregar Tarea</h3>
+        <form action="/agregarTarea" method="post">
+            <label>Materia</label>
+            <input class="input" type="text" name="materia">
+            <br><br>
+            <label>Descripción</label>
+            <input class="input3" type="text" name="descripcion">
+            <br><br>
+            <label>Fecha de entrega</label>
+            <input class="input" type="date" name="fecha">
+            <br><br>
+            <input class="input" type="submit" value="Agregar Tarea">
+            <br>
+        </form>
+    </div>
+
+    
+    <div class="consultar">
+        <h3>Consultar tareas</h3>
+        <a href="/getTarea">Link: Tareas pendientes</a>
+        <br>
+        <br>
+    </div>
+</body>
+</html>

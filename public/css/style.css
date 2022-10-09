@@ -1,0 +1,150 @@
+body{
+
+  font-family: sans-serif;
+    background: rgb(125, 198, 240);
+  }
+  a{
+   
+    color: white;
+    text-decoration: none;
+  }
+  p{
+    font-family: 'Baloo Tamma', cursive;
+
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 2px;
+    top: 2%;
+    position: absolute;
+    
+    text-shadow: -1px -1px 0px rgb(125, 198, 240),
+      3px 3px 0px rgb(125, 198, 240),
+      6px 6px 0px rgb(2, 92, 145);
+  }
+  .agregar{
+    font-family: sans-serif;
+      position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 7px;
+    margin-top: -40px;
+    background-color: #fff;
+    padding: 25px;
+  }
+
+
+  .consultar{
+    top: 75%;
+    left: 30%;
+    position: absolute;
+    margin-top: -40px;
+  }
+
+
+  .modalmask {
+    position: fixed;
+    font-family: sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.inputid{
+  background-color: rgb(2, 92, 145);
+  border: rgb(2, 92, 145);
+  color: white;
+  width: 108px;
+  border-radius: 7px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+h3{
+  color: rgb(2, 92, 145);
+}
+.input{
+  background-color: rgb(2, 92, 145);
+  border-radius: 7px;
+  border: rgb(2, 92, 145);
+  color: white;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.input3{
+  background-color: rgb(2, 92, 145);
+  border-radius: 7px;
+  border: rgb(2, 92, 145);
+  color: white;
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 209px;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalbox{
+  width: 400px;
+  position: relative;
+  padding: 5px 20px 13px 35px;
+  background: #fff;
+  border-radius:3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+   
+}
+.movedown {
+  margin: 0 auto;
+}
+.rotate {
+  margin: 10% auto;
+  -webkit-transform: scale(-5,-5);
+  transform: scale(-5,-5);
+}
+.resize {
+  margin: 10% auto;
+  width:0;
+  height:0;
+
+}
+.modalmask:target .movedown{       
+  margin:10% auto;
+}
+.modalmask:target .rotate{     
+  transform: rotate(360deg) scale(1,1);
+      -webkit-transform: rotate(360deg) scale(1,1);
+}
+
+.modalmask:target .resize{
+  width:400px;
+  height:200px;
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+  top: 1px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:3px;
+
+}
+
+.close:hover {
+  background: #58c7fa;
+  color:#222;
+}
