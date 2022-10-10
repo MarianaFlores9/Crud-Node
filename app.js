@@ -1,16 +1,28 @@
-const express = require('express')
+import {
+  DB_HOST,
+  DB_NAME,
+  DB_PASSWORD,
+  DB_PORT,
+  DB_USER,
+  PORT,
+} from './config.js'
 
-const mysql = require('mysql2')
 
-var bodyParser = require('body-parser')
+
+
+import mysql from 'mysql2'
+import express from 'express'
+import bodyParser from 'body-parser'
+
 var app = express()
 
 var con = mysql.createConnection({
 
-    host:'localhost',
-    user:'root',
-    password: 'root',
-    database:'agenda'
+  host: DB_HOST,
+  user: DB_USER,
+  database: DB_NAME,
+  password: DB_PASSWORD,
+  port: DB_PORT,
 
 })
 
@@ -209,8 +221,8 @@ app.get('/getTarea',(req,res)=>{
 })
 
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
 
-    console.log("Servidor escuchando en el puerto 3000")
+    console.log("Servidor escuchando en el puerto", PORT)
 
 })
