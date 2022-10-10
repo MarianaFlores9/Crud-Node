@@ -83,7 +83,7 @@ app.post('/eliminarTarea', (req, res)=>{
 
 app.get('/getTarea',(req,res)=>{
 
-    con.query('SELECT *FROM TAREA ORDER BY fecha ASC', (err, respuesta, field)=>{
+    con.query('select * from tarea order by fecha asc', (err, respuesta, field)=>{
     if(err)return console.log('ERROR:', err)
 
     var tareaHTML=``
